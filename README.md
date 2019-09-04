@@ -1,7 +1,9 @@
 # dotnet-standalone-service
-Standalone service implementation for .NET framework allows for service to run in different contexts (CLI, as service) and to manage itself from CLI (install, uninstall, start, stop)
+Standalone service for .NET framework allows you to implement services which:
+- can run in different contexts (CLI, as service)
+- can manage themselves from CLI (install, uninstall, start, stop)
 
-## Usage
+## How to implement
 ```C#
 
 /// <summary>
@@ -12,7 +14,7 @@ public class TestStandaloneServiceInstaller : StandaloneServiceInstaller {
 }
 
 /// <summary>
-/// Defines main service class
+/// Defines main service/application class
 /// </summary>
 public class TestStandaloneService : StandaloneService {
 
@@ -60,9 +62,46 @@ public class TestStandaloneService : StandaloneService {
   protected override void ExecuteServiceFunctionality(string[] args) {
     while (true) {
       // Do stuff ...
+      Console.WriteLine("I'm working ...");
+      Thread.Sleep(1000);
     }
   }
 
 }
 
 ```
+
+## How to use
+
+#### Run from CLI
+```cmd
+> test.exe
+
+I'm working ...
+I'm working ...
+I'm working ...
+```
+
+#### Install as service
+```sh
+> test.exe --install
+```
+*Will prompt for elevated privilages if needed.*
+
+#### Uninstall service
+```sh
+> test.exe --uninstall
+```
+*Will prompt for elevated privilages if needed.*
+
+#### Start service
+```sh
+> test.exe --start
+```
+*Will prompt for elevated privilages if needed.*
+
+#### Stop service
+```sh
+> test.exe --stop
+```
+*Will prompt for elevated privilages if needed.*

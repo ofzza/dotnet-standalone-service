@@ -3,11 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-standalone-service", "dotnet-standalone-service\dotnet-standalone-service.csproj", "{FE0807C9-6056-466B-BFF7-461CA815C06D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test-standalone-service", "test-standalone-service\test-standalone-service.csproj", "{4A86C9BF-F994-4962-B99B-212974A0C5A1}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE0807C9-6056-466B-BFF7-461CA815C06D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE0807C9-6056-466B-BFF7-461CA815C06D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE0807C9-6056-466B-BFF7-461CA815C06D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE0807C9-6056-466B-BFF7-461CA815C06D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A86C9BF-F994-4962-B99B-212974A0C5A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A86C9BF-F994-4962-B99B-212974A0C5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A86C9BF-F994-4962-B99B-212974A0C5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A86C9BF-F994-4962-B99B-212974A0C5A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5F35973E-9F62-480B-AFCD-9D272E7CFF12}
+		SolutionGuid = {2AD21AE7-31E9-4FD5-9653-533981C47968}
 	EndGlobalSection
 EndGlobal

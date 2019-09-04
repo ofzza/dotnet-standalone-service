@@ -7,8 +7,8 @@
     <ProjectGuid>{FE0807C9-6056-466B-BFF7-461CA815C06D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>dotnet_standalone_service</RootNamespace>
-    <AssemblyName>dotnet standalone service</AssemblyName>
+    <RootNamespace>ofzza.standaloneservice</RootNamespace>
+    <AssemblyName>standaloneservice</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
